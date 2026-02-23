@@ -783,3 +783,13 @@ section { padding: 5rem 0; }
   .hero { padding: 3rem 0 2.5rem; }
   .page-hero { padding: 3rem 0 2rem; }
 }
+
+/* === NUCLEAR: Force all content visible === */
+.reveal, .fade-up, .slide-in-left, .slide-in-right,
+[data-aos], [data-aos="fade-up"], [data-aos="fade-in"],
+.gallery-grid > *, .testimonials-grid > *, .about-stats > *,
+.split-text .char {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
