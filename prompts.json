@@ -1,0 +1,23 @@
+[
+  {
+    "index": 1,
+    "slug": "driveway-cleaning-hero",
+    "prompt": "Professional pressure washing a concrete driveway at a residential home in Knoxville Tennessee, powerful surface cleaner attachment creating a perfectly clean stripe across an algae-stained driveway, dramatic contrast between the dirty and freshly cleaned concrete sections, typical East Tennessee brick ranch home with mature oak trees and a sloped front yard, bright midday sunshine casting sharp shadows, shot on Canon EOS 5D Mark IV with 24-70mm f/2.8 lens, slightly elevated angle showing the clean line progressing across the driveway, photorealistic before-and-after effect in a single frame",
+    "negative_prompt": "cartoon, illustration, anime, CGI, 3D render, watermark, text overlay, stock photo watermark, oversaturated colors, blurry, low resolution",
+    "category": "hero"
+  },
+  {
+    "index": 2,
+    "slug": "house-washing-hero",
+    "prompt": "Soft wash house washing in progress on a two-story vinyl siding home in Knoxville Tennessee, technician using a low-pressure spray wand to apply cleaning solution to green algae and mildew stains on the siding, suds running down the exterior wall, ladder and hose reel visible nearby, lush green East Tennessee landscaping with dogwood trees and azalea bushes around the foundation, overcast sky providing even diffused lighting, shot on Sony A7R IV with 16-35mm f/2.8 lens, wide angle composition showing the full house facade with half cleaned and half uncleaned, photorealistic residential service photography",
+    "negative_prompt": "cartoon, illustration, anime, CGI, 3D render, watermark, text overlay, stock photo watermark, oversaturated colors, blurry, low resolution",
+    "category": "hero"
+  },
+  {
+    "index": 3,
+    "slug": "roof-cleaning-hero",
+    "prompt": "Professional roof cleaning on an asphalt shingle roof of a Knoxville Tennessee home, technician on the roof edge using a soft wash system to spray cleaning solution on dark black algae streaks running down the shingles, one section of the roof already cleaned showing the original light gray shingle color, Smoky Mountains foothills visible in the distant background under a partly cloudy Tennessee sky, shot on Nikon D850 with 70-200mm f/2.8 lens from ground level looking up at the roofline, compressed perspective showing the roof detail and mountain backdrop, photorealistic editorial photography with rich natural colors",
+    "negative_prompt": "cartoon, illustration, anime, CGI, 3D render, watermark, text overlay, stock photo watermark, oversaturated colors, blurry, low resolution",
+    "category": "hero"
+  }
+]
