@@ -1,5 +1,5 @@
 /* ============================================================
-   Huntsville HVAC Pros — v2.5 Design System
+   Knox Pressure Pros — v2.5 Design System
    Shared CSS for all pages
    ============================================================ */
 
@@ -32,7 +32,8 @@
   --shadow-md: 0 4px 20px rgba(0,0,0,0.1);
   --shadow-lg: 0 8px 40px rgba(0,0,0,0.12);
   --shadow-glow: 0 0 30px var(--color-accent-glow);
-  --font-display: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
   --section-pad: clamp(64px, 8vw, 120px);
 }
 
