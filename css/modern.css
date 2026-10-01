@@ -537,3 +537,90 @@ body.dm-home .sticky-cta { display: none; }
   body.dm-home .sticky-cta a:first-child { background: var(--cta); color: var(--cta-ink); }
   body.dm-home .sticky-cta a:last-child { background: var(--navy); color: #fff; }
 }
+
+/* ===== Round 3 (2026-10-01): privacy-policy.html uses a bare <header><nav> and <footer> that no sheet styles.
+   The page rendered an unstyled bullet list over the hero and 700px footer icons at every width, so this
+   block applies at all widths (real desktop bug on that one page only; no other page has a bare <header>). ===== */
+body.dm > header:not([class]) { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,.97); border-bottom: 1px solid var(--line); }
+body.dm > header:not([class]) > nav { max-width: 1180px; margin: 0 auto; padding: 0 24px; height: var(--hdr); display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+body.dm > header:not([class]) .logo { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; text-decoration: none; color: var(--ink); font: 800 1.12rem/1 var(--display); }
+body.dm > header:not([class]) .logo-icon { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 10px; background: linear-gradient(135deg, var(--brand), var(--brand-2)); color: #fff; }
+body.dm > header:not([class]) .logo-icon svg { width: 20px; height: 20px; }
+body.dm > header:not([class]) .nav-links { list-style: none; margin: 0; padding: 0; display: flex; align-items: center; gap: 4px; }
+body.dm > header:not([class]) .nav-links > li { position: relative; margin: 0; }
+body.dm > header:not([class]) .nav-links > li > a { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px; color: var(--ink-2); font-weight: 600; font-size: .96rem; text-decoration: none; border-radius: 10px; }
+body.dm > header:not([class]) .nav-links > li > a:hover { color: var(--brand); }
+body.dm > header:not([class]) .dropdown-arrow { font-size: .6em; }
+body.dm > header:not([class]) .nav-links .nav-cta { background: var(--cta); color: var(--cta-ink); font-weight: 800; padding: 0 18px; margin-left: 6px; }
+body.dm > header:not([class]) .dropdown-menu { display: none; position: absolute; top: 100%; left: 0; min-width: 240px; padding: 8px; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow-lg); }
+body.dm > header:not([class]) .dropdown-menu-areas { display: none; grid-template-columns: 1fr 1fr; min-width: 360px; }
+body.dm > header:not([class]) .dropdown:hover > .dropdown-menu, body.dm > header:not([class]) .dropdown:focus-within > .dropdown-menu { display: grid; }
+body.dm > header:not([class]) .dropdown-menu a { display: flex; align-items: center; min-height: 40px; padding: 0 12px; border-radius: 8px; color: var(--ink-2); font-size: .94rem; text-decoration: none; }
+body.dm > header:not([class]) .dropdown-menu a:hover { background: var(--soft); color: var(--brand); }
+body.dm > header:not([class]) .menu-toggle { display: none; align-items: center; justify-content: center; width: 44px; height: 44px; padding: 0; border: 0; background: transparent; color: var(--ink); cursor: pointer; }
+body.dm > header:not([class]) .menu-toggle svg { width: 26px; height: 26px; }
+body.dm > footer:not([class]) { background: var(--footer); color: rgba(255,255,255,.72); padding: 56px 24px 28px; }
+body.dm > footer:not([class]) .footer-content { max-width: 1180px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 36px; }
+body.dm > footer:not([class]) h3, body.dm > footer:not([class]) h4 { color: #fff; margin: 0 0 14px; }
+body.dm > footer:not([class]) p { color: rgba(255,255,255,.72); font-size: .95rem; }
+body.dm > footer:not([class]) ul { list-style: none; margin: 0; padding: 0; }
+body.dm > footer:not([class]) li { margin: 0 0 8px; }
+body.dm > footer:not([class]) a { color: rgba(255,255,255,.84); text-decoration: none; }
+body.dm > footer:not([class]) a:hover { color: #fff; text-decoration: underline; }
+body.dm > footer:not([class]) .footer-contact p { display: flex; align-items: center; gap: 10px; margin: 0 0 10px; }
+body.dm > footer:not([class]) .footer-contact svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--cta); }
+body.dm > footer:not([class]) .footer-bottom { max-width: 1180px; margin: 40px auto 0; }
+@media (max-width: 1024px) {
+  body.dm > header:not([class]) .menu-toggle { display: inline-flex; }
+  body.dm > header:not([class]) .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 18px 18px; background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow-lg); max-height: calc(100vh - var(--hdr)); overflow-y: auto; }
+  body.dm > header:not([class]) .nav-links.active { display: flex; }
+  body.dm > header:not([class]) .nav-links > li > a { width: 100%; padding: 0 6px; border-bottom: 1px solid var(--line); border-radius: 0; }
+  body.dm > header:not([class]) .nav-links .nav-cta { justify-content: center; margin: 12px 0 0; border-radius: 12px; border: 0; }
+  body.dm > header:not([class]) .dropdown-menu, body.dm > header:not([class]) .dropdown-menu-areas { display: grid; position: static; grid-template-columns: 1fr 1fr; min-width: 0; padding: 4px 0 8px 10px; border: 0; box-shadow: none; }
+  body.dm > header:not([class]) .dropdown-menu a { min-height: 44px; }
+  body.dm > footer:not([class]) .footer-content { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 640px) {
+  body.dm > footer:not([class]) { padding-bottom: 104px; }
+  body.dm > footer:not([class]) .footer-content { grid-template-columns: 1fr; gap: 28px; }
+  body.dm > footer:not([class]) :is(p, li) { font-size: 15px; }
+  body.dm > footer:not([class]) li a { display: inline-flex; align-items: center; min-height: 44px; }
+  body.dm > footer:not([class]) li { margin: 0; }
+}
+
+/* ===== Round 3 phone + tablet (2026-10-01). Everything below sits in max-width queries; desktop (>1100px) is untouched. ===== */
+@media (max-width: 1100px) {
+  /* inner-page header: the 7-link desktop nav wraps and squeezes at 1024, so tablets get the menu */
+  body.dm .header .logo { display: inline-flex; align-items: center; min-height: 44px; }
+  body.dm .header .menu-toggle { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 0; margin: 0; background: transparent; border: 0; cursor: pointer; }
+  body.dm .header .menu-toggle span { display: block; width: 24px; height: 2px; margin: 0; background: var(--ink); border-radius: 2px; }
+  body.dm .header .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; margin: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 18px 18px; background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow-lg); max-height: calc(100vh - 72px); overflow-y: auto; list-style: none; }
+  body.dm .header .nav-links.active { display: flex; }
+  body.dm .header .nav-links > li { width: 100%; margin: 0; }
+  body.dm .header .nav-links a:not(.btn) { display: flex; align-items: center; justify-content: flex-start; min-height: 48px; padding: 0 6px; border-bottom: 1px solid var(--line); border-radius: 0; font-size: 1rem; text-align: left; background: transparent; }
+  body.dm .header .nav-links .header-phone { color: var(--brand); gap: 8px; }
+  body.dm .header .nav-links .btn { display: flex; width: 100%; justify-content: center; min-height: 48px; margin-top: 12px; font-size: 1rem !important; }
+  body.dm .header .nav-dropdown > a { pointer-events: none; color: var(--muted) !important; font-size: .85rem !important; text-transform: uppercase; letter-spacing: .06em; min-height: 40px !important; border-bottom: 0 !important; }
+  body.dm .header .nav-dropdown .dropdown-menu, body.dm .header .nav-dropdown:hover .dropdown-menu { display: grid; grid-template-columns: 1fr 1fr; column-gap: 12px; position: static; transform: none; opacity: 1; visibility: visible; min-width: 0; padding: 0 0 6px; margin: 0; border: 0; box-shadow: none; background: transparent; list-style: none; }
+  body.dm .header .nav-dropdown .dropdown-menu li { margin: 0; }
+  /* home nav */
+  body.dm-home :is(.nav__logo) { display: inline-flex; align-items: center; min-height: 44px; }
+  body.dm-home :is(.nav__hamburger, .nav__toggle) { min-height: 44px; min-width: 44px; }
+  body.dm-home .footer__phone { display: inline-flex; align-items: center; min-height: 44px; }
+  body.dm .footer-links a[href^="tel"], body.dm .dm-wrap li > a[href^="tel"] { display: inline-flex; align-items: center; min-height: 44px; }
+}
+@media (max-width: 960px) {
+  /* floating call / quote circles stay visible on phones and tablets so a call action is always on screen */
+  body.dm .floating-cta { transform: none; opacity: 1; pointer-events: auto; }
+}
+@media (max-width: 640px) {
+  body.dm :is(.footer p, footer.footer p, .footer-about, .process-step p, .process__step p, .footer__brand p, .footer__bottom p, .footer-bottom p) { font-size: 15px; }
+}
+@media (min-width: 641px) and (max-width: 860px) {
+  /* tablet portrait: 5 process steps go 2-up (3-up squeezed the text), the odd last step spans the row */
+  body.dm-home :is(.process-grid, .process__steps) { grid-template-columns: repeat(2, 1fr); }
+  body.dm-home :is(.process-grid, .process__steps) > :last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+@media (max-width: 960px) {
+  body.dm .dm-table-wrap table { width: 100%; }
+}

@@ -54,12 +54,30 @@ gtag('config', 'G-SJ5N1H7D02');
 <meta property="og:image:alt" content="Knox Pressure Pros">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://knoxpressurepros.com/images/og-card.jpg">
+<style>/* Round 3 (2026-10-01) phone + tablet menu; media-only, desktop unchanged */
+@media (max-width: 1100px) {
+  body { --ink: #0f1a2a; --muted: #526072; --line: #e1e8ef; --brand: #15803d; --shadow-lg: 0 20px 50px rgba(15,26,42,.14); }
+  body .header .logo { display: inline-flex; align-items: center; min-height: 44px; }
+  body .header .menu-toggle { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 5px; width: 44px; height: 44px; padding: 0; margin: 0; background: transparent; border: 0; cursor: pointer; }
+  body .header .menu-toggle span { display: block; width: 24px; height: 2px; margin: 0; background: var(--ink); border-radius: 2px; }
+  body .header .nav-links { display: none; position: absolute; top: 100%; left: 0; right: 0; margin: 0; flex-direction: column; align-items: stretch; gap: 0; padding: 8px 18px 18px; background: #fff; border-bottom: 1px solid var(--line); box-shadow: var(--shadow-lg); max-height: calc(100vh - 72px); overflow-y: auto; list-style: none; }
+  body .header .nav-links.active { display: flex; }
+  body .header .nav-links > li { width: 100%; margin: 0; }
+  body .header .nav-links a:not(.btn) { display: flex; align-items: center; justify-content: flex-start; min-height: 48px; padding: 0 6px; border-bottom: 1px solid var(--line); border-radius: 0; font-size: 1rem; text-align: left; background: transparent; }
+  body .header .nav-links .header-phone { color: var(--brand); gap: 8px; }
+  body .header .nav-links .btn { display: flex; width: 100%; justify-content: center; min-height: 48px; margin-top: 12px; font-size: 1rem !important; }
+  body .header .nav-dropdown > a { pointer-events: none; color: var(--muted) !important; font-size: .85rem !important; text-transform: uppercase; letter-spacing: .06em; min-height: 40px !important; border-bottom: 0 !important; }
+  body .header .nav-dropdown .dropdown-menu, body .header .nav-dropdown:hover .dropdown-menu { display: grid; grid-template-columns: 1fr 1fr; column-gap: 12px; position: static; transform: none; opacity: 1; visibility: visible; min-width: 0; padding: 0 0 6px; margin: 0; border: 0; box-shadow: none; background: transparent; list-style: none; }
+  body .header .nav-dropdown .dropdown-menu li { margin: 0; }
+  body .footer-links a[href^="tel"] { display: inline-flex; align-items: center; min-height: 44px; }
+}
+</style>
 </head>
 <body>
 <header class="header" id="header">
 <div class="container">
 <a class="logo" href="index.html">
-<span class="logo-icon">KP</span> <span class="logo-brand">Knoxville</span> Pressure Washing
+<span class="logo-icon">KP</span> <span class="logo-brand">Knox</span> Pressure Pros
             </a>
 <button aria-expanded="false" aria-label="Toggle navigation" class="menu-toggle">
 <span></span><span></span><span></span>
