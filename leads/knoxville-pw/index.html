@@ -5,32 +5,34 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Knoxville Pressure Washing · Lead Packet</title>
 <meta name="robots" content="noindex,nofollow">
-<meta name="theme-color" content="#0c2d48">
+<meta name="theme-color" content="#1a1a2e">
 
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230c2d48'/%3E%3Ctext x='32' y='44' font-family='system-ui' font-size='32' font-weight='800' text-anchor='middle' fill='%23fff'%3EITD%3C/text%3E%3C/svg%3E">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%2316a34a'/%3E%3Ctext x='32' y='44' font-family='system-ui' font-size='32' font-weight='800' text-anchor='middle' fill='%23fff'%3EITD%3C/text%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap">
 
 <style>
 :root {
-  --cta-bg: #f97316;
-  --cta-fg: #0c2d48;
-  --cta-hover: #fb8a3c;
-  --accent:      #145da0;
-  --accent-dark: #0c2d48;
-  --dark:        #0c2d48;
-  --gray:        #5a5a5a;
+  /* Matched to knoxpressurepros.com: site-theme.css overrides the base blue with
+     green #16a34a, on the shared #1a1a2e dark and #f1f5f9 surface. */
+  --cta-bg:      #16a34a;
+  --cta-fg:      #ffffff;
+  --cta-hover:   #15803d;
+  --accent:      #16a34a;
+  --accent-dark: #15803d;
+  --dark:        #1a1a2e;
+  --gray:        #64748b;
   --light:       #f1f5f9;
-  --border:      #d8e2ee;
-  --badge-bg:    #e4eef9;
-  --badge-color: #0c4a85;
+  --border:      #d7e9dc;
+  --badge-bg:    #e7f6ec;
+  --badge-color: #15803d;
   --urgent:      #b45309;
 }
 * { box-sizing: border-box; }
 body {
-  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   margin: 0;
   background: var(--light);
   color: var(--dark);
@@ -62,7 +64,7 @@ header h1 {
 
 .hero {
   border-bottom-color: var(--cta-bg);
-  background: linear-gradient(135deg, #0c2d48, #145da0);
+  background: linear-gradient(135deg, var(--dark), var(--accent-dark));
   border-bottom: 4px solid var(--accent);
   color: #fff;
   padding: 1.75rem 1.5rem;
@@ -450,7 +452,12 @@ footer strong { color: var(--accent-dark); }
 .sb-note-msg.err { color: #991b1b; font-weight: 700; }
 @media (max-width: 480px) { .sb-note-btn { padding: .3rem .55rem; } }
 header { border-bottom-color: var(--cta-bg); }
-h1, h2, h3, .lead-title, .summary-stat .val { font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+h1, h2, h3, .lead-title, .summary-stat .val { font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+
+  /* Display face, as the site uses it for headings. */
+  h1, h2, h3, .lead-title, .summary-stat .val, .cta-card h3 {
+    font-family: 'Space Grotesk', 'DM Sans', sans-serif; letter-spacing: -0.01em;
+  }
 </style>
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 </head>
