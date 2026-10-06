@@ -29,8 +29,8 @@ button{cursor:pointer;font-family:inherit;border:none}
 .card__title{font-size:.9375rem;font-weight:700;color:#0f172a;margin-bottom:20px;padding-bottom:14px;border-bottom:2px solid #f1f5f9;display:flex;align-items:center;gap:8px}
 .card__title-icon{width:28px;height:28px;background:rgba(21,128,61,0.08);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .card__title-icon svg{width:15px;height:15px;stroke:#15803d;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-.row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-@media(max-width:520px){.row{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:16px}.row:last-child{margin-bottom:0}.row>.field{margin-bottom:0}
+@media(max-width:520px){.row{grid-template-columns:1fr;gap:16px}}
 .field{margin-bottom:16px}
 .field:last-child{margin-bottom:0}
 label{display:block;font-size:.8125rem;font-weight:600;color:#374151;margin-bottom:6px;line-height:1.4}
@@ -145,7 +145,7 @@ body>.nav>.nav__logo{column-gap:.28em}
 </div>
 <div class="field">
 <label for="state">State <span class="req">*</span></label>
-<input autocomplete="address-level1" id="state" maxlength="20" name="state" onchange="this.value=this.value.toUpperCase()" oninput="this.value=this.value.toUpperCase()" pattern="[A-Za-z .]{2,20}" placeholder="TX" required="" title="State — 2-letter code or full name" type="text"/>
+<input autocomplete="address-level1" id="state" maxlength="20" name="state" onchange="this.value=this.value.toUpperCase()" oninput="this.value=this.value.toUpperCase()" pattern="[A-Za-z .]{2,20}" placeholder="TN" required="" title="State — 2-letter code or full name" type="text"/>
 </div>
 </div>
 <div class="field" style="margin-bottom:0">
