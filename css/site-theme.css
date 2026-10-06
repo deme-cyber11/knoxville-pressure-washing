@@ -182,3 +182,7 @@ body.dm .dm-post__more::after { content: " \2192"; }
 @media (min-width: 641px) {
   body.dm .form-row.form-row--3, body.dm .dm-contact .form-row.form-row--3 { grid-template-columns: 2fr 1fr 1fr; }
 }
+
+/* Stacked form rows on phones: the 16px column gap became a row gap, so fields that
+   shared a desktop row sat 32px apart while the rest sat 16px apart. */
+body.dm .estimate-form .form-row { row-gap: 0; }
