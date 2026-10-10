@@ -87,6 +87,7 @@
 <div aria-live="polite" id="contact-form-success" role="status" style="display:none;background:#ecfdf5;border:1.5px solid #10b981;border-radius:10px;padding:20px;color:#065f46;margin-bottom:16px"><strong>Thanks, we got your request.</strong><br/>We'll reach out shortly. Need us sooner? Call <a href="tel:+18653788377">(865) 378-8377</a>.</div>
 <div aria-live="assertive" id="contact-form-error" role="alert" style="display:none;background:#fef2f2;border:1.5px solid #ef4444;border-radius:10px;padding:20px;color:#7f1d1d;margin-bottom:16px"></div>
 <form action="https://lead-manager-api.irontigerdigital.workers.dev/ingest" class="estimate-form" data-error="contact-form-error" data-fallback-tel="(865) 378-8377" data-strict="true" data-success="contact-form-success" id="contact-lead-form" method="POST">
+<input type="hidden" name="page_url" value="/contact.html">
 <input name="site_domain" type="hidden" value="knoxpressurepros.com"/>
 <input name="_subject" type="hidden" value="New Lead — knoxpressurepros.com"/>
 <input name="_redirect" type="hidden" value="https://knoxpressurepros.com/contact.html#success"/>
@@ -109,6 +110,7 @@
 <div class="form-group"><label for="c-timeline">How Soon Do You Need This?</label><select id="c-timeline" name="timeline" required=""><option disabled="" selected="" value="">Select one…</option><option>As soon as possible</option><option>Within 2 weeks</option><option>Within 1 month</option><option>1 to 3 months</option><option>Flexible, gathering quotes</option></select></div>
 <div class="form-group"><label for="c-message">Additional Details</label><textarea id="c-message" maxlength="2000" minlength="10" name="message" placeholder="Surfaces to clean, square footage, best time to reach you…" required="" rows="4"></textarea></div>
 <button class="btn btn-primary" type="submit">Send My Free Estimate Request</button>
+<p class="itd-form-notice" style="grid-column:1/-1;margin:.75rem 0 0;font-size:.8125rem;line-height:1.5;text-align:center">Your request and contact details go to an independent local contractor who serves your area, so they can contact you about your project.</p>
 </form>
 </div></section><section class="dm-band"><div class="dm-wrap">
 <h2>Professional Pressure Washing in Knoxville, TN</h2>
@@ -144,5 +146,8 @@
 <a aria-label="Call Now" class="fcta-call" href="tel:+18653788377"><span class="fcta-label">Call Now</span><svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
 <a aria-label="Free Quote" class="fcta-quote" href="/contact.html"><span class="fcta-label">Free Quote</span><svg fill="none" height="24" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24" width="24"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
 </div><script defer="" src="/js/form.js"></script>
+<!-- itd-d24: page attribution for leads and calls, managed by tools/page-attribution-plan.py -->
+<script>(function(){var A='https://lead-manager-api.irontigerdigital.workers.dev';function f(){var fs=document.querySelectorAll('form');for(var i=0;i<fs.length;i++){var x=fs[i],a=x.getAttribute('action')||'';if(a&&a.indexOf('/ingest')<0)continue;var h=x.querySelector('input[name="page_url"]');if(!h){h=document.createElement('input');h.type='hidden';h.name='page_url';x.appendChild(h);}h.value=location.pathname;}}if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',f);else f();document.addEventListener('click',function(e){var t=e.target&&e.target.closest?e.target.closest('a[href^="tel:"]'):null;if(!t||!navigator.sendBeacon)return;try{navigator.sendBeacon(A+'/track/call-click',JSON.stringify({site:location.hostname.replace(/^www\./,''),page_path:location.pathname,tel:t.getAttribute('href')}));}catch(_){}},true);})();</script>
+<!-- /itd-d24 -->
 </body>
 </html>
